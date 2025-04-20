@@ -1,0 +1,182 @@
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    color: #333;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-container {
+    text-align: center;
+}
+
+.about-hero {
+    background: linear-gradient(to right, #4a90e2, #007bb5), 
+                url('https://source.unsplash.com/1600x900/?technology,artificial-intelligence');
+    background-blend-mode: overlay;
+    color: white;
+    padding: 100px 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: slideInDown 1.2s ease-out;
+}
+
+.about-hero h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.about-hero p {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.mission {
+    padding: 60px 20px;
+    background: #e3f2fd;
+    color: #222;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 1.5s ease-in-out forwards;
+}
+
+.mission h2 {
+    font-size: 2.5em;
+    color: #01579b;
+}
+
+.mission p {
+    font-size: 1.2em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.how-it-works {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #4fc3f7, #0277bd);
+    color: white;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInRight 1.5s ease-in-out forwards;
+}
+
+.how-it-works h2 {
+    font-size: 2.5em;
+    color: #ffeb3b;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.step {
+    width: 28%;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transform: translateY(30px);
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.team {
+    padding: 60px 20px;
+    background: #ffffff;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: scaleUp 1.5s ease-in-out forwards;
+}
+
+.team h2 {
+    font-size: 2.2em;
+    color: #222;
+}
+
+.team p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.footer {
+    background: linear-gradient(to right, #4a90e2, #007bb5);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.1em;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.team {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f4f4f4;
+  }
+  
+  .team-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+  }
+  
+  .team-member h3 {
+    color: #007bb5;
+    margin-bottom: 5px;
+  }
+  
+  .team-member p {
+    color: #333;
+  }  

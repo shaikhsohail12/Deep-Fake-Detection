@@ -1,0 +1,117 @@
+.container {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, rgba(106, 17, 203, 0.8), rgba(37, 117, 252, 0.8)), 
+              url("https://source.unsplash.com/1600x900/?technology,ai") center/cover no-repeat;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  animation: slideInDown 1.2s ease-out; /* Slide-in animation */
+}
+
+input[type="file"] {
+  display: block;
+  padding: 12px;
+  margin: 15px auto;
+  border: 2px dashed white;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+input[type="file"]:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+button {
+  padding: 14px 25px;
+  background: #ff9800;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  margin-top: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+}
+
+button:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+  animation: none;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1.3em;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  display: inline-block;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
